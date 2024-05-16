@@ -34,6 +34,8 @@
       src="https://kit.fontawesome.com/8d2ab55a4d.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- css links -->
     <link rel="stylesheet" href="stylesheet.css" />
     <!-- Google fonts -->
@@ -53,31 +55,79 @@
   </head>
 
   <body>
-    <!-- banner -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <h1 class="heading">About Us</h1>
-          <h4 class="heading-sub">MBR - Heaven of ice creams</h4>
-          <p class="para">
-            MBR Ice Cream is a leading ice cream manufacturer based in the
-            vibrant city of Coimbatore. Established in [year], our company has
-            been delighting customers with premium quality ice cream products
-            for over [number] years. From classic flavors to innovative
-            creations, we take pride in crafting indulgent treats that captivate
-            taste buds and create memorable experiences.
-          </p>
-        </div>
-        <div class="col-12 col-lg-6">
-          <img src="./assests/aboutus-banner.jpg" class="w-100" />
+    <!-- navbar prefix -->
+    <div style="background-color: #90D5AC;" class="banner-prefix-color">
+      <div class="container pt-3">
+        <div class="d-flex flex-row justify-content-start">
+          <p>Get 25% discount on each pack</p>
+          <div class="ml-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp mr-1" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook mr-1" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram mr-1" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter mr-1" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg>
+          </div>
+        </div>                
+      </div>
+      
+  </div>
+  <!-- navbar -->
+  <nav style="background-color: #90D5AC;" class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>
+        <div class="d-block d-md-none" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="index.html">Home</span></a>
+                <a class="nav-link" href="product.html">Products</a>
+                <a class="nav-link" href="aboutus.html">Abouts Us</a>
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+            </div>
         </div>
       </div>
+  </nav>
+  <!-- banner -->
+  <div style="background-color: #90D5AC;" class="pb-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mt-5 mb-5">
+              <h1 class="heading">About Us</h1>
+              <h4 class="heading-sub">MBR - Heaven of ice creams</h4>
+              <p class="para">
+                MBR Ice Cream is a leading ice cream manufacturer based in the
+                vibrant city of Coimbatore. Established in [year], our company has
+                been delighting customers with premium quality ice cream products
+                for over [number] years. From classic flavors to innovative
+                creations, we take pride in crafting indulgent treats that captivate
+                taste buds and create memorable experiences.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mb-5">
+              <img style="border-radius: 25px;" src="./assests/aboutus-banner.jpg" class="w-100 shadow" />
+            </div>
+        </div>
     </div>
+  </div>
+   
+  <!-- pattern -->
+  <div style="background-color: #90D5AC;" class="pattern-bg mb-5"></div>
+    
     <!-- mission vission -->
-    <div class="container mt-5">
+  <div class="container mt-5 mb-5">
       <div class="row">
-        <div class="col-12 col-lg-8">
-          <h1 class="heading">Mission</h1>
+        <div class="col-12 col-lg-9">
+          <h1 class="heading mb-3">Mission</h1>
           <p class="para">
             At MBR Ice Cream, our mission is simple to spread joy, one scoop at
             a time. We are committed to producing the highest quality ice cream
@@ -87,7 +137,7 @@
             and create moments of happiness.
           </p>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-3 d-none d-lg-block">
           <svg
             width="170"
             height="170"
@@ -138,9 +188,234 @@
           </svg>
         </div>
       </div>
-    </div>
-    <!-- ourworks -->
-    <div class="container mt-5">
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <h1 class="heading mb-3 ">Vision</h1>
+          <p class="para ">
+            At our core, we envision a world where every scoop of our ice cream brings people together, creating moments of joy, connection, and indulgence. We strive to be more than just a dessert; we aim to become an integral part of communities, celebrated for our commitment to quality, creativity, and inclusivity. With each flavor, we aspire to ignite smiles, spark conversations, and build lasting memories.
+          </p>
+        </div>
+        <div class="col-12 col-lg-3 d-none d-lg-block">
+          <svg fill="#000000" height="170px" width="170px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+	<g>
+		<g>
+			<path d="M509.778,250.021C505.152,244.672,394.926,118.857,256,118.857S6.848,244.672,2.222,250.03
+				c-2.962,3.429-2.962,8.521,0,11.95C6.848,267.328,117.074,393.143,256,393.143S505.152,267.328,509.778,261.97
+				C512.741,258.542,512.741,253.449,509.778,250.021z M21.568,256c16.64-17.481,69.477-69.019,138.862-98.158
+				c-25.6,24.923-41.573,59.694-41.573,98.158c0,38.464,15.973,73.234,41.573,98.158C91.045,325.02,38.208,273.481,21.568,256z
+				M256,374.857c-65.536,0-118.857-53.321-118.857-118.857S190.464,137.143,256,137.143S374.857,190.464,374.857,256
+				S321.536,374.857,256,374.857z M351.579,354.158c25.591-24.923,41.563-59.694,41.563-98.158c0-38.464-15.973-73.234-41.573-98.158
+				c69.385,29.138,122.222,80.677,138.862,98.158C473.792,273.481,420.965,325.02,351.579,354.158z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M182.857,256h18.286c0-30.254,24.603-54.857,54.857-54.857v-18.286C215.671,182.857,182.857,215.671,182.857,256z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M310.857,256c0,30.254-24.603,54.857-54.857,54.857v18.286c40.329,0,73.143-32.814,73.143-73.143H310.857z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M104.923,84.489c-4.855,4.288-9.563,8.805-14.007,13.449l13.202,12.645c4.087-4.27,8.43-8.439,12.901-12.379
+				L104.923,84.489z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M56.347,144.677c-3.136,5.632-6.08,11.474-8.731,17.353l16.658,7.525c2.45-5.413,5.147-10.779,8.037-15.963
+				L56.347,144.677z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M407.232,84.626l-12.105,13.705c4.462,3.941,8.795,8.101,12.882,12.389l13.221-12.635
+				C416.786,93.431,412.069,88.905,407.232,84.626z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M246.418,27.63c-6.464,0.265-12.974,0.814-19.355,1.618l2.304,18.149c5.87-0.75,11.858-1.253,17.81-1.499L246.418,27.63z"
+				/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M341.458,43.95l-6.839,16.951c5.504,2.222,10.971,4.709,16.265,7.387l8.256-16.311
+				C353.399,49.07,347.447,46.363,341.458,43.95z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M207.909,32.503c-6.29,1.344-12.608,2.99-18.798,4.873l5.33,17.49c5.696-1.737,11.52-3.246,17.307-4.489L207.909,32.503z"
+				/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M78.08,112.521c-4.078,5.047-7.963,10.304-11.547,15.625l15.159,10.231c3.301-4.882,6.875-9.719,10.624-14.373
+				L78.08,112.521z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M304.338,32.558l-3.849,17.874c5.797,1.243,11.621,2.761,17.289,4.507l5.367-17.481
+				C316.983,35.566,310.656,33.911,304.338,32.558z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M265.829,27.639l-0.777,18.267c5.97,0.247,11.968,0.759,17.819,1.509l2.313-18.139
+				C278.821,28.471,272.311,27.913,265.829,27.639z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M455.753,144.878l-15.973,8.896c2.898,5.211,5.605,10.587,8.027,15.973l16.677-7.515
+				C461.842,156.37,458.917,150.537,455.753,144.878z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M136.11,61.367c-5.504,3.401-10.917,7.067-16.082,10.898l10.898,14.693c4.754-3.529,9.719-6.903,14.793-10.03
+				L136.11,61.367z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M434.03,112.686l-14.235,11.474c3.73,4.626,7.296,9.463,10.615,14.382l15.168-10.231
+				C441.966,122.962,438.089,117.705,434.03,112.686z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M376.073,61.486l-9.627,15.543c5.056,3.136,10.03,6.51,14.793,10.039l10.898-14.674
+				C386.971,68.553,381.559,64.878,376.073,61.486z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M170.761,43.858c-5.943,2.395-11.904,5.093-17.701,8.009l8.238,16.329c5.33-2.688,10.816-5.166,16.293-7.378
+				L170.761,43.858z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M282.633,464.603c-5.87,0.75-11.858,1.253-17.81,1.499l0.759,18.267c6.464-0.265,12.974-0.814,19.355-1.618
+				L282.633,464.603z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M229.129,464.585l-2.313,18.139c6.363,0.805,12.873,1.362,19.355,1.637l0.777-18.267
+				C240.978,465.847,234.981,465.335,229.129,464.585z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M194.222,457.061l-5.367,17.481c6.162,1.893,12.489,3.547,18.807,4.901l3.849-17.874
+				C205.705,460.315,199.89,458.798,194.222,457.061z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M317.559,457.134c-5.696,1.737-11.52,3.246-17.307,4.489l3.84,17.874c6.29-1.344,12.608-2.99,18.798-4.873
+				L317.559,457.134z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M103.991,401.28L90.77,413.915c4.443,4.654,9.161,9.179,13.998,13.458l12.105-13.705
+				C112.411,409.728,108.078,405.568,103.991,401.28z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M64.192,342.254l-16.677,7.515c2.642,5.861,5.568,11.694,8.731,17.353l15.973-8.896
+				C69.321,353.015,66.615,347.639,64.192,342.254z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M81.582,373.458l-15.159,10.231c3.611,5.349,7.488,10.606,11.547,15.625l14.226-11.474
+				C88.466,383.214,84.901,378.377,81.582,373.458z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M130.77,424.933l-10.898,14.674c5.157,3.84,10.569,7.515,16.055,10.907l9.627-15.543
+				C140.498,431.845,135.525,428.471,130.77,424.933z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M161.115,443.721l-8.256,16.311c5.751,2.907,11.703,5.614,17.682,8.027l6.839-16.951
+				C171.877,448.887,166.409,446.4,161.115,443.721z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M381.074,425.042c-4.754,3.529-9.719,6.903-14.793,10.03l9.609,15.561c5.504-3.401,10.917-7.067,16.082-10.898
+				L381.074,425.042z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M350.711,443.803c-5.33,2.688-10.816,5.166-16.293,7.378l6.821,16.96c5.943-2.395,11.904-5.093,17.701-8.009
+				L350.711,443.803z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M407.881,401.417c-4.087,4.27-8.43,8.439-12.901,12.379l12.096,13.714c4.855-4.288,9.563-8.805,14.007-13.449
+				L407.881,401.417z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M447.726,342.446c-2.45,5.413-5.147,10.779-8.037,15.963l15.963,8.914c3.136-5.632,6.08-11.474,8.731-17.353
+				L447.726,342.446z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M430.309,373.623c-3.301,4.882-6.875,9.719-10.624,14.373l14.235,11.483c4.078-5.047,7.963-10.304,11.547-15.625
+				L430.309,373.623z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M9.143,0C4.096,0,0,4.096,0,9.143v45.714h18.286V18.286h36.571V0H9.143z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M502.857,0h-45.714v18.286h36.571v36.571H512V9.143C512,4.096,507.904,0,502.857,0z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M18.286,493.714v-36.571H0v45.714C0,507.904,4.096,512,9.143,512h45.714v-18.286H18.286z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M493.714,457.143v36.571h-36.571V512h45.714c5.047,0,9.143-4.096,9.143-9.143v-45.714H493.714z"/>
+		</g>
+	</g>
+          </svg>
+        </div>
+        
+      </div>
+  </div>
+  <!-- ourworks -->
+  <div class="container" style="margin-top: 100px;">
       <h1 class="text-center heading">Our Pillars of Excellence</h1>
       <p class="text-center para">
         At MBR Ice Cream,the trust ensures that every scoop is a sweet moment
@@ -162,8 +437,8 @@
                 fill="#0E1418"
               />
             </svg>
-            <h1 class="heading">Location</h1>
-            <p class="para">
+            <h1 class="headingcard">Location</h1>
+            <p class="paracard">
               Scooping up happiness right in your neighborhood with our locally
               sourced ingredients
             </p>
@@ -184,8 +459,8 @@
                 fill="#0E1418"
               />
             </svg>
-            <h1 class="heading">Quality</h1>
-            <p class="para">
+            <h1 class="headingcard">Quality</h1>
+            <p class="paracard">
               Crafted with care and passion, our ice cream is a delightful
               symphony of premium ingredients and unparalleled taste
             </p>
@@ -208,8 +483,8 @@
                 fill="#0E1418"
               />
             </svg>
-            <h1 class="heading">Transperency</h1>
-            <p class="para">
+            <h1 class="headingcard">Transperency</h1>
+            <p class="paracard">
               From farm to scoop, we believe in transparency, sharing the story
               behind every delicious flavor
             </p>
@@ -230,8 +505,8 @@
                 fill="#0E1418"
               />
             </svg>
-            <h1 class="heading">Commitment</h1>
-            <p class="para">
+            <h1 class="headingcard">Commitment</h1>
+            <p class="paracard">
               Dedicated to serving up smiles with every scoop, our commitment to
               excellence never melts away
             </p>
@@ -260,8 +535,8 @@
                 fill="#0E1418"
               />
             </svg>
-            <h1 class="heading">Accessibility</h1>
-            <p class="para">
+            <h1 class="headingcard">Accessibility</h1>
+            <p class="paracard">
               Bringing joy to everyone, everywhere - find our irresistible
               treats in stores near you or order online for doorstep delight
             </p>
@@ -286,14 +561,261 @@
                 fill="#0E1418"
               />
             </svg>
-            <h1 class="heading">Trust</h1>
-            <p class="para">
+            <h1 class="headingcard">Trust</h1>
+            <p class="paracard">
               Indulge with confidence in our time-tested recipes and unwavering
               dedication to quality and satisfaction
             </p>
           </div>
         </div>
       </div>
+  </div>
+  <!-- testimonial -->
+  <div class="customer-says pt-5 pb-5">
+    <h1 class="mb-5 text-center">Testimonial</h1>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="customer-card">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Raghavendran M</h5>
+                                <p>"The construction team exceeded our expectations with their attention to detail and commitment to excellence. From start to finish, they demonstrated professionalism and delivered a high-quality project on time."</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 ">
+                            <div class="customer-card d-none d-md-block">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Sanjay S</h5>
+                                <p>"Working with the team was a pleasure. Their team's expertise and dedication to customer satisfaction made our construction journey smooth and stress-free. We're thrilled with the outcome and would highly recommend their services."</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="customer-card d-none d-md-block">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Harsha D</h5>
+                                <p> "The construction team turned our vision into reality with their exceptional craftsmanship and attention to detail. Their professionalism and communication throughout the project were outstanding. We couldn't be happier with the results."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="customer-card">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Naveen M</h5>
+                                <p>"I had an outstanding experience working with MSK team. Their team went above and beyond to find me the perfect home within my budget. Their expertise and dedication made the entire process smooth and stress-free."</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="customer-card d-none d-md-block">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Mounish N</h5>
+                                <p>"I've had the pleasure of working with the MSK team on commercial projects, and they consistently deliver exceptional results. Their ability to meet deadlines and maintain quality sets them apart in the industry."</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="customer-card d-none d-md-block">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Nithish R</h5>
+                                <p> "MSK Infra Projects transformed our renovation project into a success with their professionalism and expertise. Their commitment to delivering on-time and within budget exceeded our expectations. We highly recommend their services"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="customer-card">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Ashwin B</h5>
+                                <p>"I've worked with many construction companies, but MSK Infra Projects stands out for their dedication to excellence. Their commitment to quality and customer satisfaction make them a trusted partner in the construction industry."</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="customer-card d-none d-md-block">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Balachandran C</h5>
+                                <p>"From the initial consultation to the final walkthrough, the construction team was responsive and transparent. Their dedication to customer satisfaction made the entire process smooth and enjoyable. I highly recommend their services to anyone in need of a reliable construction partner."</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 ">
+                            <div class="customer-card d-none d-md-block">
+                                <img class="mb-3" style="height: 100px;width: 100px;border-radius: 50px;" src="./assests/person-sample.jpg" />
+                                <div class="d-flex flex-row mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFDE20" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <h5 class="mb-3">Nickshith Dev</h5>
+                                <p> "The construction company's project management skills are top-notch. They kept us informed every step of the way and ensured that our project was completed on time and within budget. We're grateful for their expertise and professionalism."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+
+
+
+
