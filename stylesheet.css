@@ -221,7 +221,8 @@ input[type="email"]:focus {
   font-style: normal;
 }
 
-.heading-sub {
+.heading-sub,
+.headingc {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -232,6 +233,13 @@ input[type="email"]:focus {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
+  font-style: normal;
+}
+
+.parac {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 .customer-says {
@@ -245,5 +253,5 @@ input[type="email"]:focus {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  height:400px;
+  height: 400px;
 }
