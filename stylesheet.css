@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.banner-prefix-color {
+  background-color: #91d6cf;
+  height: 50px;
+  width: 100%;
+}
+.banner-bg {
+  background-image: url(./assests/banner-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.pattern-bg {
+  background-color: #91d6cf;
+  background-image: url("./assests/pattern.png");
+  background-repeat: repeat;
+  height: 140px;
+}
+.button-style {
+  background-color: #fb677b;
+  border: 1px solid #fb677b;
+  color: white;
+  border-radius: 15px;
+  /* text-align: center; */
+  padding: 15px;
+
+  transition: transform 0.3s ease;
+}
+.button-style:hover {
+  transform: translateY(-10px);
+  color: white;
+}
+.card-img-1 {
+  background-image: url("./assests/sub-img-1.jpg");
+  background-size: cover;
+  height: 50vh;
+  border-radius: 10px;
+}
+.card-img-2 {
+  background-image: url("./assests/sub-banner-2.jpg");
+  background-size: cover;
+  height: 25vh;
+  border-radius: 10px;
+}
+.card-img-3 {
+  background-image: url("./assests/sub-banner-3.jpg");
+  background-size: cover;
+  height: 23vh;
+  border-radius: 10px;
+}
+.card-img-4 {
+  background-image: url("./assests/sub-banner-4.jpg");
+  background-size: cover;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border: 1px solid white;
+}
+.card {
+  background-color: black;
+}
+.line {
+  width: 100%;
+  background-color: lightblue;
+}
+.delivery-and-payment-section {
+  background-color: #f9fbfe;
+}
+
+.delivery-and-payment-section-img {
+  width: 270px;
+}
+
+.delivery-and-payment-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 17px;
+}
+
+.payment-card-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 28px;
+}
+
+.wcu-section {
+  background-color: #f9fbfe;
+}
+
+.wcu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.wcu-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.wcu-card {
+  text-align: center;
+  background-color: white;
+  border-radius: 16px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.wcu-card-image {
+  width: 87px;
+  height: 90px;
+}
+
+.wcu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.wcu-card-description {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.offers {
+  color: #323f4b;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.explore-menu-section {
+  background-color: white;
+}
+
+.menu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.menu-item-image {
+  border-radius: 16px;
+}
+
+.menu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.menu-item-link {
+  color: #d0b200;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu-item-card {
+  border-radius: 16px;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  height: 300px;
+}
+
+.gallery > div {
+  flex: 1;
+  transition: all 1s;
+  border-radius: 20px;
+}
+
+.gallery > div:nth-child(1) {
+  background: url("./assests/sub-banner-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.gallery > div:nth-child(2) {
+  background: url("./assests/sub-banner-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.gallery > div:nth-child(3) {
+  background: url("./assests/sub-banner-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery > div:hover {
+  flex: 6;
+}
+
+.sample-card {
+  background-color: #dfddd8;
+  border-radius: 15px;
+}
+
+.heading {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.heading-sub {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.para {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
