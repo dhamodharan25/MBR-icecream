@@ -234,20 +234,6 @@ input[type="email"]:focus {
   font-weight: 600;
   font-style: normal;
 }
-
-.headingcard {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.paracard {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 .customer-says {
   height: auto;
   background-color: rgba(184, 188, 185, 0.252);
@@ -259,5 +245,5 @@ input[type="email"]:focus {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  height: 400px;
+  height:400px;
 }
